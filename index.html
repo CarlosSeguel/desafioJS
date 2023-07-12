@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio JS functions</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <main class="grid-container">
+        <div class="sticker1">
+            <div class="block glow">
+                <img src="./assets/img/sticker2.png" alt="sticker1" height="300px">
+            </div>
+            <h3>Selecciona cantidad</h6>
+            <input type="number" id="sticker1">
+        </div>
+        <div class="sticker2">
+            <div class="block glow">
+                <img src="./assets/img/sticker3.png" alt="sticker2" height="300px">
+            </div>
+            <h3>Selecciona cantidad</h6>
+            <input type="number" id="sticker2">
+        </div>
+        <div class="sticker3">
+            <div class="block glow">
+                <img src="./assets/img/sticker4.png" alt="sticker3" height="300px">
+            </div>
+            <h3>Selecciona cantidad</h6>
+            <input type="number" id="sticker3">
+        </div>
+        <div class="calcular">
+            <button onclick="calcularTotal()">Calcular total</button>
+        </div>
+        <div class="total" id="mensaje">
+            <h3>
+                <span id="total">Llevas 0 Stickers</span>
+            </h3>
+        </div>
+
+    </main>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

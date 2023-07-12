@@ -1,0 +1,79 @@
+body{
+    border: 0;
+    padding: 0;
+    background-color: black;
+}
+.grid-container{
+    display: grid;
+    grid-template-areas: "sticker1 sticker2 sticker3";
+}
+.sticker1{
+    grid-area: sticker1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sticker2{
+    grid-area: sticker2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sticker3{
+    grid-area: sticker3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input{
+width: auto;
+}
+.block{
+    position: relative;
+    margin: 10% auto 0;
+    width: 300px;
+    height: 300px;
+}
+.glow::before, .glow::after{
+content: '';
+position: absolute;
+left: -2px;
+top: -2px;
+background: linear-gradient(45deg, yellow, red,green, lightblue,fuchsia,purple,violet, blue);
+background-size: 400%;
+width: calc(100% + 5px);
+height: calc(100% + 5px);
+z-index: -1;
+animation: animate 20s linear infinite;
+}
+@keyframes animate {
+    0%{
+        background-position: 0 0;
+    }    
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+.glow::after{
+    filter: blur(40px);
+}
+.glow.clicked::before {
+    /* tus estilos cuando se ha hecho clic */
+    background: none;
+    filter: none;
+}
+h3{
+    color: white    ;
+}
+input{
+    text-align: center;
+    height: 25px;
+    border-radius: 25px;
+    font-weight: bold;
+}
