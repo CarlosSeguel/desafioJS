@@ -5,7 +5,12 @@ body{
 }
 .grid-container{
     display: grid;
-    grid-template-areas: "sticker1 sticker2 sticker3";
+    grid-template-areas: 
+    "sticker1 sticker2 sticker3"
+    "calcular calcular calcular"
+    "total total total"
+    "password password password"
+    ;
 }
 .sticker1{
     grid-area: sticker1;
@@ -76,4 +81,23 @@ input{
     height: 25px;
     border-radius: 25px;
     font-weight: bold;
+}
+.calcular{
+    grid-area: calcular;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+}
+.total{
+    grid-area: total;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.password{
+    grid-area: password;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
