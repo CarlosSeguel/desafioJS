@@ -11,6 +11,7 @@ body{
     "total total total"
     "titulo titulo titulo"
     "password password password"
+    "finalMessage finalMessage finalMessage"
     ;
 }
 .sticker1{
@@ -114,4 +115,16 @@ select{
     text-align: center;
     width: 10rem;
     margin: auto;
+}
+.finalMessage{
+    grid-area: finalMessage;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+button{
+    height: 2.5rem;
+    width: auto;
+    font-weight: 400 bold;
 }

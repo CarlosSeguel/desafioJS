@@ -36,3 +36,16 @@ else{
 }
 
 }
+function ingresarPass(){
+    const pass1 = document.getElementById('key1').value;
+    const pass2 = document.getElementById('key2').value;
+    const pass3 = document.getElementById('key3').value;
+    const mensajeFinal = document.getElementById('finalMessage');
+    let validkey = pass1 + pass2 + pass3
+    if (validkey === '777'){
+        mensajeFinal.textContent = "Ingresaste la clave correcta, tu pedido es valido"
+    }
+    else{
+        mensajeFinal.textContent = "La clave ingresada no es correcta, tu pedido no es valido"
+    }
+}
