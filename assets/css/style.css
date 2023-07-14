@@ -9,6 +9,7 @@ body{
     "sticker1 sticker2 sticker3"
     "calcular calcular calcular"
     "total total total"
+    "titulo titulo titulo"
     "password password password"
     ;
 }
@@ -95,9 +96,22 @@ input{
     justify-content: center;
     align-items: center;
 }
+.titulo{
+    grid-area: titulo;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .password{
     grid-area: password;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+select{
+    text-align: center;
+    width: 10rem;
+    margin: auto;
 }
